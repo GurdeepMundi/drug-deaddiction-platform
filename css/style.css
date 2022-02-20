@@ -52,7 +52,17 @@ float :right;
     border: px solid #ccc;  
   }
 }
-.footer {
-    background-color: darkcyan;
-        height:20px;
+.main-body{
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+.main-body > div:hover {
+  box-shadow: 1px 1px 15px white;
+}
+.main-body > div > a > img{
+  text-align: center;
+  margin: 10%;
+}
+.main-body h3 {
+  color: white;
 }
