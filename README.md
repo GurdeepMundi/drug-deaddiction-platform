@@ -6,5 +6,4 @@ This project is a solution to one of the problems given in CalgaryHacks 2022.
 - Gurdeep Singh
 - Jagjit Singh
 - Maruf Tonmoy
-- Shubham Tandon
 - Vijay Adoni
