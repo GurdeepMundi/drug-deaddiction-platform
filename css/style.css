@@ -1,0 +1,58 @@
+body {
+ background-color:     cornflowerblue;
+    
+}
+.mediator {
+float :right;  
+    }
+.topnav {
+    background-color: coral;
+}
+.topnav .search-container {
+      margin:auto;
+    width: 50%;
+}
+
+.topnav input[type=text] {
+  height: 35px;
+    width: 800px;
+    font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+     height: 35px;
+    width: 148px;
+  position: relative;
+    top:-36px;
+  background: #ccc;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: px solid #ccc;  
+  }
+}
+.footer {
+    background-color: darkcyan;
+        height:20px;
+}
