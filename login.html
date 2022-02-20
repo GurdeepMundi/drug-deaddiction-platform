@@ -1,7 +1,6 @@
 <html>
     <head>
     <title>login page</title>
-    
     <link rel="stylesheet" type="text/css" href="../css/style1.css">
         <style>
 h1 {text-align: center;}
@@ -13,11 +12,12 @@ h1 {text-align: center;}
     <h1 >REGISTER AS A TRAINED PROFESSIONAL</h1>
 <div class="first">
     <div class="container1">
+      <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" placeholder="Enter Username" name="uname">
 <p>
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="psw">
 
      </p>
         <P>
@@ -30,8 +30,9 @@ h1 {text-align: center;}
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
-    <button class=btn> Register
+    <button name = "register" value = "register" onclick = "window.open('./admin/registeration.php')">Register</button>
 </button>
+</form>
   </div>
 
 </body>
