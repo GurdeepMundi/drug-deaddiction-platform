@@ -27,7 +27,7 @@
         }
         //json string, needs to be manipulated
         $string = json_encode($json_array);
-        //header('Content-Type: application/json');
+        header('Content-Type: application/json');
         //getting string for categories
         $query = "select user_id, name as categoryName, email, phone from categories inner join (SELECT category_id, user_id, email, phone FROM user_categories, professionals WHERE user_categories.user_id = professionals.id and professionals.email ='$email') s where s.category_id = categories.id;";
         $res = mysqli_query($link, $query);
@@ -50,6 +50,7 @@
             $jason_array[] = $row;
         }
         $string = json_encode($jason_array);
+        header('Content-Type: application/json');
         echo $string;
     }
     if($_GET['query'] == "getAvailableCategories")
@@ -65,6 +66,7 @@
             $jason_array[] = $row;
         }
         $string = json_encode($jason_array);
+        header('Content-Type: application/json');
         echo $string;
     }
 
@@ -81,6 +83,7 @@
             $jason_array[] = $row;
         }
         $string = json_encode($jason_array);
+        header('Content-Type: application/json');
         echo $string;
     }
     if($_GET['query'] == "getAllMeetings")
