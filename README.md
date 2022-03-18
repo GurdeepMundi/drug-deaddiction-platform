@@ -1,4 +1,4 @@
-# Drug Deaddiction Platform
+# Drug Rehabilitation Platform
 This is a web platform where drug addiction victims can connect with deaddiction professionals. 
 ### About project
 This project is a solution to one of the problems given in CalgaryHacks 2022.
